@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { slide } from 'svelte/transition';
+
 	let showMenu = false;
 </script>
 
@@ -7,6 +9,7 @@
 >
 	{#if showMenu}
 		<ul
+			transition:slide
 			class="absolute top-full flex flex-col gap-4 items-center justify-center pb-4 w-full z-50 border-b-4 border-blue-500 bg-inherit md:static md:flex-row md:p-0 md:border-none"
 		>
 			<li>
