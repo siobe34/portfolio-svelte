@@ -5,7 +5,11 @@
 
 <!-- Navbar -->
 <Navbar />
+
+<!-- Main Content -->
+<main class="relative flex flex-col items-center justify-start">
 	<slot />
+</main>
 
 <style>
 	@tailwind base;
