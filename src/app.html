@@ -7,6 +7,17 @@
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div class="style" ="display: contents">%sveltekit.body%</div>
+		<div class="app">%sveltekit.body%</div>
 	</body>
+	<style>
+		.app {
+			display: grid;
+			min-height: 100vh;
+			min-height: 100dvh;
+			grid-template-areas:
+				'nav'
+				'main';
+			grid-template-rows: auto 1fr;
+		}
+	</style>
 </html>
