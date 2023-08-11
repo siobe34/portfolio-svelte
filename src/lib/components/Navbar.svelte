@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
+	import { ROUTES } from '$lib/constants/ROUTES';
 
 	// * Whether to show the mobile menu or hide it
 	let showMenu = false;
@@ -15,6 +16,11 @@
 			class:flex={showMenu}
 			class:hidden={!showMenu}
 		>
+			{#each ROUTES as route}
+				<li>
+					<a href={route.url}>{route.name}</a>
+				</li>
+			{/each}
 		</ul>
 	{/key}
 	<button
