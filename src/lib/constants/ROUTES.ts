@@ -1,6 +1,6 @@
 export const ROUTES = [
-	{ url: '#top', name: 'About Me' },
-	{ url: '#top', name: 'Projects' },
-	{ url: '#top', name: 'Technical Skills' },
-	{ url: '#top', name: 'Resume' }
+	{ url: '#about-me', name: 'About Me' },
+	{ url: '#projects', name: 'Projects' },
+	{ url: '#technical-skills', name: 'Technical Skills' },
+	{ url: 'https://v1ibadrashid.vercel.app/Resume_Ibad-Rashid.pdf', name: 'Resume' }
 ];
