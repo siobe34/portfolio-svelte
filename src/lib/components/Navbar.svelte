@@ -9,6 +9,15 @@
 <nav
 	class="relative flex gap-4 items-center justify-end py-4 border-b-4 border-blue-400 bg-slate-200 md:justify-center"
 >
+	<a href="https://github.com/siobe34" class="text-3xl ml-4 hover:opacity-80 hover:text-secondary">
+		<i class="fab fa-github" />
+	</a>
+	<a
+		href="https://www.linkedin.com/in/ibadrashid/"
+		class="text-3xl mr-auto hover:opacity-80 hover:text-secondary"
+	>
+		<i class="fab fa-linkedin" />
+	</a>
 	{#key showMenu}
 		<ul
 			transition:slide
