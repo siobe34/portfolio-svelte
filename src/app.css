@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--bg: 236 242 247;
+	--border: 0 0 0;
+	--onBg: 0 0 0;
+	--primary: 211 194 255;
+	--onPrim: 0 0 0;
+	--secondary: 70 193 107;
+	--onSec: 0 0 0;
+}
+
+.dark {
+	--bg: 19 12 35;
+	--border: 177, 161, 222;
+	--onBg: 235 235 235;
+	--primary: 97 70 193;
+	--onPrim: 255 255 255;
+	--secondary: 70 193 107;
+	--onSec: 0 0 0;
+}
