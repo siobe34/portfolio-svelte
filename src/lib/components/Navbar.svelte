@@ -18,7 +18,7 @@
 </script>
 
 <nav
-	class="relative flex gap-4 items-center justify-end py-4 border-b-4 border-blue-400 bg-slate-200 md:justify-center"
+	class="sticky top-0 flex gap-4 items-center justify-end py-4 z-50 text-onBg bg-bg border-b-2 border-border md:justify-center"
 >
 	<a href="https://github.com/siobe34" class="text-3xl ml-4 hover:opacity-80 hover:text-secondary">
 		<i class="fab fa-github" />
@@ -32,13 +32,15 @@
 	{#key showMenu}
 		<ul
 			transition:slide
-			class="absolute top-full flex-col gap-4 items-center justify-center pb-4 w-full z-50 border-b-4 border-blue-500 bg-inherit md:static md:flex md:flex-row md:p-0 md:border-none"
+			class="absolute top-full flex-col gap-4 items-center justify-center pb-4 w-full bg-inherit border-b-4 border-primary md:static md:flex md:flex-row md:p-0 md:border-none"
 			class:flex={showMenu}
 			class:hidden={!showMenu}
 		>
 			{#each ROUTES as route}
-				<li>
-					<a href={route.url}>{route.name}</a>
+				<li
+					class="relative flex flex-col items-center justify-center px-2 py-1 w-full hover:opacity-80 md:w-auto after:hidden md:after:flex after:absolute after:bottom-0 after:h-[1px] after:w-[1rem] after:rounded after:border after:border-primary after:pointer-events-none after:transition-all after:hover:w-full after:hover:h-full after:hover:-z-10 after:hover:bg-primary"
+				>
+					<a class="flex items-center justify-center w-full" href={route.url}>{route.name}</a>
 				</li>
 			{/each}
 		</ul>
@@ -61,6 +63,6 @@
 		class="flex items-center px-4 py-2 justify-center md:hidden"
 		on:click={() => (showMenu = !showMenu)}
 	>
-		<i class="fa-solid fa-bars" />
+		<i class="fas fa-bars" />
 	</button>
 </nav>
