@@ -1,5 +1,6 @@
 <!-- Layout file for the entire app -->
 <script>
+	import '../app.css';
 	import Navbar from '$lib/components/Navbar.svelte';
 </script>
 
@@ -7,12 +8,6 @@
 <Navbar />
 
 <!-- Main Content -->
-<main class="relative flex flex-col items-center justify-start">
+<main class="relative flex flex-col items-center justify-start text-onBg bg-bg">
 	<slot />
 </main>
-
-<style>
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-</style>
