@@ -55,7 +55,7 @@ export const PROJECTS = [
 		name: 'Portfolio v1',
 		description: 'The first version of my personal portfolio.',
 		imgSrc: portfolioV1,
-		url: 'https://github.com/siobe34/portfolio',
+		url: 'https://v1ibadrashid.vercel.app',
 		action: 'See older version of my portfolio',
 		stack: ['typescript', 'react', 'styled', 'reactrouter', 'vercel']
 	}
