@@ -5,15 +5,20 @@
 	import profilePic from '$lib/images/profile.png';
 </script>
 
+<br />
 <Container id="about-me" classOverrides="-mt-20 pt-20">
 	<img
 		src={profilePic}
 		alt="Pic of me"
 		class="rounded-full w-[200px] h-[200px] min-w-[200px] min-h-[200px] object-cover"
 	/>
-	<h1 class="text-3xl">Ibad Rashid</h1>
+	<div class="flex flex-col items-center justify-center">
+		<h1 class="text-3xl">Ibad Rashid</h1>
+		<span>Toronto Metropolitan University</span>
+		<span class="font-semibold">BEng</span>
+	</div>
 	<p class="text-center">
-		Hi, my name's Ibad. I'm an engineer with strong work experience in various fields of Intelligent
+		Hi, my name's Ibad, I'm an engineer with strong work experience in various fields of Intelligent
 		Transportation Systems (ITS). My work with ITS has exposed me to several web applications
 		related to Traffic Management/Safety Systems and that's how I discovered my passion for Software
 		Development.
