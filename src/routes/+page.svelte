@@ -33,6 +33,7 @@
 		<a
 			href={ROUTES[3].url}
 			class="flex items-center justify-center px-4 py-2 text-lg rounded border border-primary hover:opacity-80 hover:border-secondary hover:shadow-[0_0_45px_-20px_rgb(var(--secondary))]"
+			target="_blank"
 		>
 			View my Resume
 		</a>
