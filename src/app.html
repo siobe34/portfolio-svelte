@@ -15,6 +15,16 @@
 	<body data-sveltekit-preload-data="hover">
 		<div class="app">%sveltekit.body%</div>
 	</body>
+	<!-- Check theme preference -->
+	<script>
+		const appDiv = document.getElementsByClassName('app')[0];
+
+		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			appDiv?.classList.add('dark');
+		} else {
+			appDiv?.classList.remove('dark');
+		}
+	</script>
 	<style>
 		.app {
 			display: grid;

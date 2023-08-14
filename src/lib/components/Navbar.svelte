@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { slide } from 'svelte/transition';
 	import { ROUTES } from '$lib/constants/ROUTES';
 
@@ -7,6 +8,23 @@
 
 	// * Dark mode status
 	let darkMode = false;
+
+	// * Set user's theme preference
+	if (browser) {
+		// * Check if user prefers dark mode
+		const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+		const appDiv = document.getElementsByClassName('app')[0];
+
+		// * Set user's theme preference
+		if (userPrefersDark) {
+			appDiv?.classList.add('dark');
+			darkMode = true;
+		} else {
+			appDiv?.classList.remove('dark');
+			darkMode = false;
+		}
+	}
 
 	// * Func to add/remove '.dark' class
 	const toggleTheme = () => {
@@ -57,8 +75,8 @@
 		>
 			<span
 				class="absolute w-[20px] h-[20px] mx-1 rounded-full bg-primary transition-all"
-				class:left-[25px]={darkMode}
-				class:left-[0px]={!darkMode}
+				class:left-[25px]={!darkMode}
+				class:left-[0px]={darkMode}
 			/>
 		</button>
 		<i class="far fa-sun" />
