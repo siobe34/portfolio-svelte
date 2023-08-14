@@ -28,6 +28,12 @@
 	};
 </script>
 
+<svelte:head>
+	{#each PROJECTS as project}
+		<link rel="preload" as="image" href={project.imgSrc} />
+	{/each}
+</svelte:head>
+
 <section
 	class="flex flex-col items-center justify-center gap-4 p-4 border rounded-lg border-border/10 shadow-[0_0_45px_-20px_rgb(var(--primary))]"
 >
