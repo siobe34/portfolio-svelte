@@ -81,11 +81,16 @@
 	</ul>
 	<div class="flex gap-2">
 		{#each PROJECTS as project, i}
-			{#if activeProjectIdx === i}
-				<i class="fas fa-circle text-sm text-primary" />
-			{:else}
-				<i class="fas fa-circle text-sm" />
-			{/if}
+			<button
+				class="cursor-default text-sm hover:text-secondary"
+				on:click={() => (activeProjectIdx = i)}
+			>
+				{#if activeProjectIdx === i}
+					<i class="fas fa-circle text-primary" />
+				{:else}
+					<i class="fas fa-circle" />
+				{/if}
+			</button>
 		{/each}
 	</div>
 </section>
