@@ -5,7 +5,7 @@
 	import profilePic from '$lib/images/profile.png';
 </script>
 
-<Container id="about-me">
+<Container id="about-me" classOverrides="-mt-20 pt-20">
 	<img
 		src={profilePic}
 		alt="Pic of me"
@@ -39,7 +39,7 @@
 <span
 	class="bg-gradient-to-r from-transparent via-primary/10 to-transparent w-full h-4 -skew-y-6 mb-24"
 />
-<Container id="technical-skills">
+<Container id="technical-skills" classOverrides="-mt-20 pt-20">
 	<h2 class="text-2xl">Technical Skills</h2>
 	<section
 		class="flex flex-col items-center justify-center gap-8 md:flex-row md:items-start md:gap-16"
@@ -107,7 +107,7 @@
 	after:skew-y-3
 	"
 />
-<Container id="projects" classOverrides="mb-16">
+<Container id="projects" classOverrides="-mt-20 pt-20 mb-16">
 	<h2 class="text-2xl">Projects</h2>
 	<Projects />
 </Container>
