@@ -11,7 +11,7 @@ export const PROJECTS = [
 		description:
 			'A tool to manage your budget on a transactional level with helpful charts to see historical net worth, monthly categorical spending, and search personal transactions with a user-friendly interface.',
 		imgSrc: ledgerImg,
-		url: 'https://ledgerr.vercel.app',
+		url: 'https://ledgerr.vercel.app/demo',
 		action: 'Try the Demo',
 		stack: ['typescript', 'react', 'nextjs', 'tailwind', 'mongodb', 'supabase', 'vercel']
 	},
