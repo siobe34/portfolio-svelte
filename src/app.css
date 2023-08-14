@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	font-family: 'Montserrat', sans-serif;
+}
+
 :root {
 	--bg: 236 242 247;
 	--border: 0 0 0;
