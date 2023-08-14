@@ -45,8 +45,9 @@
 		{PROJECTS[activeProjectIdx].description}
 	</p>
 	<a
-		href={PROJECTS[activeProjectIdx].url}
 		class="flex items-center justify-center px-4 py-2 text-lg rounded bg-primary text-onPrim hover:opacity-80"
+		href={PROJECTS[activeProjectIdx].url}
+		target="_blank"
 	>
 		{PROJECTS[activeProjectIdx].action}
 	</a>
