@@ -57,7 +57,7 @@
 		>
 			<span
 				class="absolute w-[20px] h-[20px] mx-1 rounded-full bg-primary transition-all"
-				class:left-[28px]={darkMode}
+				class:left-[25px]={darkMode}
 				class:left-[0px]={!darkMode}
 			/>
 		</button>
