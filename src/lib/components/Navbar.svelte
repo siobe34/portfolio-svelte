@@ -40,7 +40,11 @@
 				<li
 					class="relative flex flex-col items-center justify-center px-2 py-1 w-full hover:opacity-80 md:w-auto after:hidden md:after:flex after:absolute after:bottom-0 after:h-[1px] after:w-[1rem] after:rounded after:border after:border-primary after:pointer-events-none after:transition-all after:hover:w-full after:hover:h-full after:hover:-z-10 after:hover:bg-primary"
 				>
-					<a class="flex items-center justify-center w-full" href={route.url}>{route.name}</a>
+					<a
+						class="flex items-center justify-center w-full"
+						href={route.url}
+						on:click={() => (showMenu = false)}>{route.name}</a
+					>
 				</li>
 			{/each}
 		</ul>
