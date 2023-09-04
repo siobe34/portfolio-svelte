@@ -14,6 +14,7 @@
 		} else {
 			activeProjectIdx += 1;
 		}
+		document.getElementById('projects')?.scrollIntoView();
 	};
 
 	// * Func to show the previous project
@@ -25,6 +26,7 @@
 		} else {
 			activeProjectIdx -= 1;
 		}
+		document.getElementById('projects')?.scrollIntoView();
 	};
 </script>
 
