@@ -50,7 +50,7 @@
 	<section
 		class="flex flex-col items-center justify-center gap-8 md:flex-row md:items-start md:gap-16"
 	>
-		<div class="flex flex-col items-center justify-center gap-2 bg-bg">
+		<div class="flex flex-col items-center justify-center gap-2">
 			<h3 class="font-semibold text-lg text-secondary uppercase">Languages</h3>
 			<ul
 				class="flex flex-col items-center justify-center gap-4 p-4 border rounded border-border text-center shadow-[0_0_45px_-20px_rgb(var(--primary))]"
@@ -64,7 +64,7 @@
 				<li>SQL</li>
 			</ul>
 		</div>
-		<div class="flex flex-col items-center justify-center gap-2 bg-bg">
+		<div class="flex flex-col items-center justify-center gap-2">
 			<h3 class="font-semibold text-lg text-secondary uppercase">Frameworks</h3>
 			<ul
 				class="flex flex-col items-center justify-center gap-4 p-4 border rounded border-border text-center shadow-[0_0_45px_-20px_rgb(var(--primary))]"
@@ -79,7 +79,7 @@
 				<li>Supabase<br />(Firebase alternative)</li>
 			</ul>
 		</div>
-		<div class="flex flex-col items-center justify-center gap-2 bg-bg">
+		<div class="flex flex-col items-center justify-center gap-2">
 			<h3 class="font-semibold text-lg text-secondary uppercase">Other</h3>
 			<ul
 				class="flex flex-col items-center justify-center gap-4 p-4 border rounded border-border text-center shadow-[0_0_45px_-20px_rgb(var(--primary))]"

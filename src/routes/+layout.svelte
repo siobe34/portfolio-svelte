@@ -8,6 +8,6 @@
 <Navbar />
 
 <!-- Main Content -->
-<main class="relative flex flex-col items-center justify-start text-onBg bg-bg">
+<main class="relative flex flex-col items-center justify-start text-onBg bg-radial-gradient">
 	<slot />
 </main>
