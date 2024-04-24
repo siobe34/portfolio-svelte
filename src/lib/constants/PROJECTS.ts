@@ -13,7 +13,7 @@ export const PROJECTS = [
 		imgSrc: ledgerImg,
 		url: 'https://ledgerr.vercel.app/demo',
 		action: 'Try the Demo',
-		stack: ['typescript', 'react', 'nextjs', 'tailwind', 'mongodb', 'supabase', 'vercel']
+		stack: ['typescript', 'react', 'nextjs', 'tailwind', 'postgresql', 'supabase', 'vercel']
 	},
 	{
 		name: 'Landmarks',
@@ -96,6 +96,11 @@ export const brandInfo = {
 		name: 'MongoDB',
 		color: '#000',
 		backgroundColor: '#449945'
+	},
+	postgresql: {
+		name: 'PostgreSQL',
+		color: '#fff',
+		backgroundColor: '#336791'
 	},
 	nginx: {
 		name: 'NGINX',
