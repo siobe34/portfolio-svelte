@@ -1,9 +1,7 @@
 import ledgerImg from '$lib/images/ledger.png';
 import landmarksImg from '$lib/images/landmarks.png';
 import chessImg from '$lib/images/10kchess.png';
-import todoImg from '$lib/images/todo.png';
 import alarmImg from '$lib/images/alarm.png';
-import portfolioV1 from '$lib/images/portfoliov1.png';
 
 export const PROJECTS = [
 	{
@@ -38,26 +36,9 @@ export const PROJECTS = [
 		description:
 			'A cross platform mobile alarm app that forces you to wake up with a variety of challenges to turn off the alarm.',
 		imgSrc: alarmImg,
-		url: 'https://github.com/siobe34/alarm-app',
-		action: 'View source code',
+		url: '',
+		action: '',
 		stack: ['typescript', 'reactNative', 'expo']
-	},
-	{
-		name: 'To-do Mobile Application',
-		description:
-			'A minimal to-do list made with Flutter. Add To-do Items on the main page with the option to mark Items as complete, delete them, or move them to Archives.',
-		imgSrc: todoImg,
-		url: 'https://github.com/siobe34/todo-flutter',
-		action: 'View source code',
-		stack: ['flutter', 'dart', 'material', 'android']
-	},
-	{
-		name: 'Portfolio v1',
-		description: 'The first version of my personal portfolio.',
-		imgSrc: portfolioV1,
-		url: 'https://v1ibadrashid.vercel.app',
-		action: 'See older version of my portfolio',
-		stack: ['typescript', 'react', 'styled', 'reactrouter', 'vercel']
 	}
 ] as const;
 
