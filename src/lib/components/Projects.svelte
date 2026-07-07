@@ -46,13 +46,15 @@
 	<p>
 		{PROJECTS[activeProjectIdx].description}
 	</p>
-	<a
-		class="flex items-center justify-center px-4 py-2 text-lg rounded bg-primary text-onPrim hover:opacity-80"
-		href={PROJECTS[activeProjectIdx].url}
-		target="_blank"
-	>
-		{PROJECTS[activeProjectIdx].action}
-	</a>
+	{#if PROJECTS[activeProjectIdx].action}
+		<a
+			class="flex items-center justify-center px-4 py-2 text-lg rounded bg-primary text-onPrim hover:opacity-80"
+			href={PROJECTS[activeProjectIdx].url}
+			target="_blank"
+		>
+			{PROJECTS[activeProjectIdx].action}
+		</a>
+	{/if}
 	{#key activeProjectIdx}
 		<div class="relative flex items-center justify-center">
 			<button
